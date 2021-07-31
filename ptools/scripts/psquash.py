@@ -2,8 +2,8 @@ from typing import Dict, Final
 
 import httpx
 
-from my_scripts.base import Script
-from my_scripts.config import settings
+from ptools.base import Script
+from ptools.config import settings
 
 
 class PSquash(Script):

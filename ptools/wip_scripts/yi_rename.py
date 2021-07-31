@@ -4,7 +4,7 @@ import re
 from collections import Callable, defaultdict
 from pathlib import Path
 
-from my_scripts.base import Script
+from ptools.base import Script
 
 RecordingDict = dict[str, dict[int, str]]
 RenameFunc = Callable[..., None]
@@ -13,7 +13,7 @@ DeleteFunc = Callable[..., None]
 
 class YiRename(Script):
     @staticmethod
-    def get_files(path: Path) -> RecordingDict:
+    def _get_files(path: Path) -> RecordingDict:
         """Return a dict containing recording IDs and pertaining files in the
         correct order.
 
@@ -49,7 +49,7 @@ class YiRename(Script):
         return recordings
 
     @staticmethod
-    def get_new_filename(recording_id: str, sequence_number: int) -> str:
+    def _get_new_filename(recording_id: str, sequence_number: int) -> str:
         """Return the new filename for the file with given ID and sequence number.
         Example output: "0727_02.mp4"
 

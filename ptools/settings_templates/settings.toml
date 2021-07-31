@@ -1,0 +1,4 @@
+
+#[plaunch]
+#    jira_base_url = "https://yourcompany.atlassian.net/browse/"
+#    jira_default_project_id = "DEFAULT"

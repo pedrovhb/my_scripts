@@ -1,6 +1,3 @@
-
-# Ignore dynaconf secret files
-.secrets.*
 venv/*
 dist/*
 .mypy_cache/*

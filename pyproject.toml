@@ -1,11 +1,13 @@
 [tool.poetry]
-    name = "my_scripts"
-    version = "0.1.8"
+    name = "ptools"
+    version = "0.1.9"
     description = ""
     authors = ["Pedro Batista <pedrovhb@gmail.com>"]
 
 [tool.poetry.scripts]
-    psquash = 'my_scripts.scripts.psquash:PSquash.run'
+    psquash = 'ptools.scripts.psquash:PSquash.run'
+    plaunch = 'ptools.scripts.plaunch:PLaunch.run'
+    ptools = 'ptools.scripts:ptools.PTools.run'
 
 [tool.poetry.dependencies]
     python = "^3.8"
@@ -14,6 +16,7 @@
     toolz = "^0.11.1"
     rich = "^10.6.0"
     dynaconf = "^3.1.4"
+    appdirs = "^1.4.4"
 
 [tool.poetry.dev-dependencies]
     isort = "^5.9.2"
