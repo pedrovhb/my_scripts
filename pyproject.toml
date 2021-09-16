@@ -1,13 +1,14 @@
 [tool.poetry]
     name = "ptools"
-    version = "0.1.9"
+    version = "0.1.10"
     description = ""
     authors = ["Pedro Batista <pedrovhb@gmail.com>"]
 
 [tool.poetry.scripts]
     psquash = 'ptools.scripts.psquash:PSquash.run'
     plaunch = 'ptools.scripts.plaunch:PLaunch.run'
-    ptools = 'ptools.scripts:ptools.PTools.run'
+    ptools = 'ptools.scripts:ptools_info.PTools.run'
+    yi_rename = 'ptools.scripts:yi_rename.YiRename.run'
 
 [tool.poetry.dependencies]
     python = "^3.8"
